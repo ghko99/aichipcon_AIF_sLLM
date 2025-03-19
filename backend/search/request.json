@@ -1,0 +1,13 @@
+{
+    "isHomeless": "예",
+    "totalAssets": 15000,
+    "ownsCar": "아니오",
+    "carValue": null,
+    "age": "35",
+    "householdIncome": 4000,
+    "householdMembers": 3,
+    "hasHousingSubscriptionAccount": "예",
+    "isUniversityStudent": "아니오",
+    "isNewlyMarried": "예",
+    "receivesHousingBenefit": "아니오"
+  }

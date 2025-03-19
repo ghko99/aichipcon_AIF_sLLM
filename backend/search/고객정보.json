@@ -1,0 +1,25 @@
+{
+    "age": 27,
+    "enrolledUniversity": false,
+    "jobSeeking": true,
+    "familyMembersCount": 4,
+    "married": true,
+    "marriageDate": "2019-11-01",
+    "dualIncome": false,
+    "hasChildren": true,
+    "childrenCount": 2,
+    "youngestChildBirthDate": "2023-10-09",
+    "singleParent": false,
+    "monthlyIncome": 1500000,
+    "householdMonthlyIncome": 4000000,
+    "ownHouse": false,
+    "assets": 340000000,
+    "ownCar": true,
+    "carPrice": 30000000,
+    "hasSubscriptionAccount": true,
+    "region": "전국",
+    "status": "공고중",
+    "startDate": "2024.01.01",
+    "endDate": "2024.11.08"
+
+}
