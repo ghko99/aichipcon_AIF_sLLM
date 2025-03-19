@@ -94,3 +94,6 @@
 ## 📈 성능 평가 (챗봇 서버 속도 테스트 - Locust)
 ![image](https://github.com/user-attachments/assets/ac79c53a-71d8-40f6-a8aa-503932e2051b)
 
+## 🔗 Links
+[AI 반도체 기술인재 선발대회](https://www.aichipcon.or.kr/main)
+
