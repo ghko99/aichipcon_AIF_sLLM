@@ -20,15 +20,26 @@
 
 
 ## 🧑‍💻 아키텍처
+![ㅇㄹㅇ](https://github.com/user-attachments/assets/27b99a12-a6bf-4e4d-b5fa-ff9d33e29e15)
+
 - AI 모델 학습 및 배포
   - RBLN-CA12 NPU
   - RBLN-vLLM 서버 환경
 
-- RAG(Retrieval-Augmented Generation) 기반 챗봇 시스템
+- LH API 기반 공고문 검색 및 추천 시스템
   - LH API를 이용한 공고 데이터 자동 수집
+  - 고객 정보 기반 임대주택 유형 필터링
+![image](https://github.com/user-attachments/assets/11a22015-0da8-4d6e-ae0e-0f94f3b1b02b)
+  - 고객 요구 기반 특정 공고 필터링 
+![image](https://github.com/user-attachments/assets/c873caa6-9ded-4185-9085-5aa6d661bad0)
+
+- RAG(Retrieval-Augmented Generation) 기반 챗봇 시스템
+![image](https://github.com/user-attachments/assets/b2c556aa-6c5e-4e90-9d2a-ca85b6d8c5e0)
+![image](https://github.com/user-attachments/assets/7d576ea4-3d20-4717-93b9-0cb0ee52f91e)
+
   - BAAI/bge-m3을 활용한 데이터 Embedding 및 Title Tagging, Chunking
-  - Retrieval 성능 최적화를 위한 Chunk 단위 Embedding
   - yanolja/EEVE-Korean-Instruct-10.8aB-v1.0 활용
+    
 
 ## 🔍 검색 엔진
 - 고객 정보 기반 임대 주택 유형 필터링
