@@ -24,7 +24,7 @@
   - RBLN-CA12 NPU
   - RBLN-vLLM 서버 환경
 
-- **RAG(Retrieval-Augmented Generation) 기반 챗봇 시스템**
+- RAG(Retrieval-Augmented Generation) 기반 챗봇 시스템
   - LH API를 이용한 공고 데이터 자동 수집
   - BAAI/bge-m3을 활용한 데이터 Embedding 및 Title Tagging, Chunking
   - Retrieval 성능 최적화를 위한 Chunk 단위 Embedding
