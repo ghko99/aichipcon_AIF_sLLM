@@ -14,8 +14,11 @@
 
 
 ## ⚙️ 주요 기능
-- **개인화된 임대주택 청약 공고문 추천**
-- **공고문에 대한 질의응답(Q&A) 챗봇 서비스**
+### **개인화된 임대주택 청약 공고문 추천**
+![KAIT-ezgif com-speed](https://github.com/user-attachments/assets/27372b38-74ec-4042-a98c-53051044deb1)
+### **공고문에 대한 질의응답(Q&A) 챗봇 서비스**
+![KAIT-ezgif com-speed (1)](https://github.com/user-attachments/assets/3a0ab255-c3f0-4482-9d58-5f18ce7bff88)
+
 
 ## 🧑‍💻 아키텍처
 ![ㅇㄹㅇ](https://github.com/user-attachments/assets/27b99a12-a6bf-4e4d-b5fa-ff9d33e29e15)
