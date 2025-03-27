@@ -65,7 +65,6 @@
 >시스템은 비정형 PDF 형태의 공고문을 효율적으로 처리하기 위해 먼저 Upstage Document Parse API를 활용하여 문서를 문장, 단락, 제목과 같은 Element 단위로 정확하게 나누고, 각 Element에 Title을 태그하여 Chunk 단위로 저장합니다. 저장된 Chunk들은 한국어에 특화된 BAAI/bge-m3 임베딩 모델로 변환되어 Vector DB에 저장되며, LH API를 활용해 새로 등록되는 공고문을 자동으로 전처리합니다. 사용자의 질의가 발생하면, 질의문을 동일한 임베딩 모델로 변환하고, Semantic search와 BM25 기반의 Lexical search를 결합한 하이브리드 검색을 통해 최적의 Chunk들을 선별하여, 원본 공고문의 순서에 맞게 재정렬 후 최종 Context를 구성합니다. 마지막으로 구성된 Context와 사용자의 질의를 결합한 Prompt를 한국어 지시문에 최적화된 EEVE-Korean-Instruct 모델(sLLM)에 입력하여 사용자에게 자연스럽고 정확한 답변을 제공합니다.
 ## 🗃️ 데이터 구축
 ![image](https://github.com/user-attachments/assets/e1ec0aed-e879-4d7b-9324-f942cba20a02)
-![image](https://github.com/user-attachments/assets/e99c2431-cc3c-4e89-8121-a47bfc282958)
 ![image](https://github.com/user-attachments/assets/5baf1def-09b0-4dcf-846e-1d7979431be7)
 ![image](https://github.com/user-attachments/assets/c00b403c-74cf-4c74-b3ea-99dbe832346b)
 >데이터 구축 단계는 원시 데이터 수집, 1차 검수, 데이터 정제, 2차 검수, 데이터 증강, 최종 검수의 총 6단계로 구성됩니다. 먼저 주택 청약 도메인 특화 질의응답 모델 학습을 위해 일반적인 주택 청약 관련 질문(QA)과 공고문 기반의 상세 질문-컨텍스트-답변(QCA) 데이터 두 가지를 수집했습니다. 일반 QA 데이터는 국토교통부의 FAQ 및 자체 수집한 데이터를 포함했으며, QCA 데이터는 실제 공고문을 Markdown으로 변환하고 GPT-4로 질문과 답변을 자동 생성해 확보했습니다. 원시 데이터 약 2200만 어절을 확보한 후 저작권, 중복, 유해성 및 개인정보 검수를 통해 약 2000만 어절로 정제했습니다. 이후 GPT 및 DeepL을 활용한 역번역으로 4배 증강한 뒤, 순서 변경·삭제·치환·TF-IDF 기반 등의 규칙 기반 증강으로 추가 4배, 총 16배 규모의 약 3억 어절의 고품질 데이터를 구축했습니다. 최종 품질 검수 단계에서는 네이버 맞춤법 검사기(py-hanspell)를 활용한 맞춤법·띄어쓰기 검사와, cosine_similarity 라이브러리를 통한 코사인 유사도 검사를 실시하여 문법적 정확성과 데이터 중복 문제를 철저히 관리하였습니다.
