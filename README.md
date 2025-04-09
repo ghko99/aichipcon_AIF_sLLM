@@ -87,7 +87,7 @@
 ## 📈 성능 평가 (챗봇 답변 정확도 테스트)
 ![image](https://github.com/user-attachments/assets/eafae086-b4be-402c-9727-3f49438b40ec)
 - [Auto-Evaluate (Allganize)](https://colab.research.google.com/drive/1c9hH429iAqw4xkgKoQq1SC9f_4p_nwcc?usp=sharing) 성능 측정: **182/300** (LangChain + GPT-4 Turbo 기준 183/300)
->Open Source sLLM 모델을 자체 튜닝해 LangChain + GPT-4 Turbo 프레임 워크 시스템의 RAG와 거의 동일한 수준의 성능을 기록했습니다다.
+>Open Source sLLM 모델을 자체 튜닝해 LangChain + GPT-4 Turbo 프레임 워크 시스템의 RAG와 거의 동일한 수준의 성능을 기록했습니다.
 ## 📈 성능 평가 (챗봇 서버 처리량 테스트 - Locust)
 ![image](https://github.com/user-attachments/assets/c778eada-1748-490c-a3d4-d0d7432e293f)
 ## 📈 성능 평가 (챗봇 서버 속도 테스트 - Locust)
