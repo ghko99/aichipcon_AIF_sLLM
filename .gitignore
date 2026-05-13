@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+.env
+.venv/
+venv/
+
+*.log
+*.pt
+*.pth
+*.h5
+
+outputs/
+results/
