@@ -3,13 +3,24 @@ __pycache__/
 .ipynb_checkpoints/
 
 .env
+.env.local
 .venv/
 venv/
+
+node_modules/
+npm-debug.log*
+.next/
+dist/
+build/
 
 *.log
 *.pt
 *.pth
 *.h5
+*.ckpt
 
 outputs/
 results/
+vector_store/
+*.csv
+*.pdf
